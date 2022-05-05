@@ -1,0 +1,154 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding-bottom: 18px;
+    margin: 0 auto;
+    width: 336px;
+    border: #C4C4C4 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+
+    
+}
+.head{
+    height: 28px;
+    background-color: #FFDC40;
+    width: 338px;
+    
+}
+h1{
+    margin-top: 17px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.icon{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+.sort1{
+    background: none;
+    background-image: url('../img/icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 0;
+    height: 15px;
+    width: 25px;
+}
+.sort1:hover{
+    background-image: url('../img/icon3.png');
+}
+
+.sort2{
+    background: none;
+    background-image: url('../img/icon2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 0;
+    height: 15px;
+    width: 25px;
+}
+.sort2:hover{
+    background-image: url('../img/icon4.png');
+}
+.tasks-board{
+    width: 286px;
+    border: #C4C4C4 1px solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 14px;
+
+}
+.task{
+    margin: 20px auto;
+
+    width:229px;
+    height:20px;
+    display: flex;
+    justify-content:start;
+}
+input{
+    width:202px;
+    border:none;
+}
+
+input:focus {
+    border: none;
+    color:none;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.delete{
+    width: 20px;
+    height: 20px;
+    border: #C4C4C4 1px solid;
+    border-radius: 20px;
+}
+.delete::before, .delete::after{
+    content:'';
+    width: 11px;
+    height: 1px;
+    background-color:#C4C4C4;
+    transform: rotate(45deg);
+    position: absolute;
+    margin: 9.5px 0 0 4.5px;
+}
+.delete::after{
+    transform: rotate(-45deg);
+}
+.delete:hover{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: #833AE0;
+}
+.delete:hover::before,.delete:hover::after{
+    background-color: #fff;
+    margin: 10.5px 0 0 5.5px;
+}
+.button{
+    display:flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 150px;
+    height: 42px;
+    margin-top: 18px;
+    background-color: #833AE0;
+    border-radius: 71px;
+}
+.button:hover{
+    background-color: #9953F1
+}
+.btn-circle{
+    width: 42px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #9953F1;
+}
+.btn-circle::before{
+    position: absolute;
+    margin: 14px 17px;
+    content: '+';
+    font-size: 14px;
+    color: #fff;
+    
+}
+span{
+    margin: auto 0;
+    margin-left: 10px;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
